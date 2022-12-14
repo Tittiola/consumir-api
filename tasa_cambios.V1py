@@ -1,5 +1,5 @@
 import requests
-from utils import apiKey
+from config import apiKey
 
 r = requests.get(f'https://rest.coinapi.io/v1/assets/?apikey={apiKey}')
 if r.status_code != 200:
@@ -14,7 +14,8 @@ for item in lista_general:
 
 
 
-
+print("moneda digital: ",len(lista_criptos))
+print("moneda no digital: ",(len(lista_general) - len(lista_criptos)))
 
 #https://rest.coinapi.io/v1/assets/?apikey=24E07BC2-CA11-4FD2-9F14-889CEE3B8DBF
 
