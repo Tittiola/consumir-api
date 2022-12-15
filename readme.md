@@ -14,3 +14,4 @@ apiKey='24E07BC2-CA11-4FD2-9F14-889CEE3B8DBF'
 ```
 pip install -r requirements.txt`
 ```
+- que las librerias utilizadas son requests y pytest

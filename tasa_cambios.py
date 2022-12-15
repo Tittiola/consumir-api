@@ -1,6 +1,5 @@
 import requests
-
-apiKey = '24E07BC2-CA11-4FD2-9F14-889CEE3B8DBF'
+from config_template import apiKey
 
 moneda_cripto = input("ingrese una criptomoneda conocida:").upper()
 
