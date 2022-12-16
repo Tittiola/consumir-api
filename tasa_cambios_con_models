@@ -1,5 +1,5 @@
 from criptoexchange.models import AllCoinApiIO,Exchange,ModelError
-from config_template import apiKey
+from config import apiKey
 
 #creamos objeto de AllCoinApiIO
 allcoint = AllCoinApiIO()

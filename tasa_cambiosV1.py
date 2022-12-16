@@ -1,5 +1,5 @@
 import requests
-from config_template import apiKey
+from config import apiKey
 
 r = requests.get(f'https://rest.coinapi.io/v1/assets/?apikey={apiKey}')
 if r.status_code != 200:

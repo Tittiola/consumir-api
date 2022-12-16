@@ -1,6 +1,7 @@
-from criptoexchange.models import AllCoinApiIo
-from criptoexchange.models import AllCoinApiIo,Exchange, ModelError
-from config_template import apiKey
+from criptoexchange.models import AllCoinApiIO
+from criptoexchange.models import AllCoinApiIO,Exchange, ModelError
+from config import apiKey
+import pytest
 #16156 de  16378 (222)
 
 def test_todocoin():
@@ -22,4 +23,4 @@ def test_cambio_ok():
 def test_cambio_no_ok():
     noOk = Exchange("NADA")
     #conseguir comparar Resultado de la clase ModelError, consultar como lo hicimos en romanos
-    #assert noOk.updateExchange(apiKey) ==  ModelError( f"status: {noOk.r.status_code} error: {noOk.resultado['error']} ")
+    #assert noOk.updateExchange(apiKey) ==  ModelError( f"status: {noOk.r.status_code} error: {noOk.resultado['erro
